@@ -1,8 +1,12 @@
 {
   "name": "learn-vue-pro",
   "version": "1.0.0",
-  "description": "learn vue 2.0 ",
+  "description": "learn vue, webpack",
   "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^3.11.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,8 +15,8 @@
     "url": "git+https://github.com/Kenoo/learn-vue-pro.git"
   },
   "keywords": [
+    "learn",
     "vue",
-    "bootstrap",
     "js",
     "webpack"
   ],
