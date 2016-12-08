@@ -1,6 +1,15 @@
 var path = require('path')
 var webpack = require('webpack')
 
+var markdown = require('markdown-it')({
+  html: true,
+  breaks: true
+})
+
+// markdown
+//   .use(plugin1)
+//   .use(plugin2, opts, ...)
+//   .use(plugin3);
 module.exports = {
   entry: './src/main.js',
   output: {
@@ -28,6 +37,11 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]'
         }
+      },
+      {
+        test: /\.md/,
+        loader: 'vue-markdown-loader',
+        options: markdown
       }
     ]
   },

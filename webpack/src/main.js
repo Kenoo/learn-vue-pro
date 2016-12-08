@@ -6,14 +6,16 @@ new Vue({
   data : {
     currentRoute: window.location.pathname
   },
-  computed: {
+  computed
+  : {
     ViewComponent () {
-      const matchingView = routes[this.currentRoute]
+      const matchingView = routers[this.currentRoute]
       return matchingView
         ? require('./pages/' + matchingView + '.vue')
         : require('./pages/404.vue')
     }
   },
+
   render(h) {
     return h(this.ViewComponent)
   }
