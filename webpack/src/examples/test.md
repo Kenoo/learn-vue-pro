@@ -20,22 +20,22 @@ Alert components are non-overlay elements in the page that does not disappear au
 
 ```html
 <template>
-  <el-alert
+  <sf-alert
     title="success alert"
     type="success">
-  </el-alert>
-  <el-alert
+  </sf-alert>
+  <sf-alert
     title="info alert"
     type="info">
-  </el-alert>
-  <el-alert
+  </sf-alert>
+  <sf-alert
     title="warning alert"
     type="warning">
-  </el-alert>
-  <el-alert
+  </sf-alert>
+  <sf-alert
     title="error alert"
     type="error">
-  </el-alert>
+  </sf-alert>
 </template>
 ```
 :::
@@ -48,21 +48,21 @@ Customize the close button as texts or other symbols.
 
 ```html
 <template>
-  <el-alert
+  <sf-alert
     title="unclosable alert"
     type="success"
     :closable="false">
-  </el-alert>
-  <el-alert
+  </sf-alert>
+  <sf-alert
     title="customized close-text"
     type="info"
     close-text="Gotcha">
-  </el-alert>
-  <el-alert
+  </sf-alert>
+  <sf-alert
     title="alert with callback"
     type="warning"
     @close="hello">
-  </el-alert>
+  </sf-alert>
 </template>
 
 <script>
@@ -85,26 +85,26 @@ Displaying an icon improves readability.
 
 ```html
 <template>
-  <el-alert
+  <sf-alert
     title="success alert"
     type="success"
     show-icon>
-  </el-alert>
-  <el-alert
+  </sf-alert>
+  <sf-alert
     title="info alert"
     type="info"
     show-icon>
-  </el-alert>
-  <el-alert
+  </sf-alert>
+  <sf-alert
     title="warning alert"
     type="warning"
     show-icon>
-  </el-alert>
-  <el-alert
+  </sf-alert>
+  <sf-alert
     title="error alert"
     type="error"
     show-icon>
-  </el-alert>
+  </sf-alert>
 </template>
 ```
 :::
@@ -117,11 +117,11 @@ Description includes a message with more detailed information.
 
 ```html
 <template>
-  <el-alert
+  <sf-alert
     title="with description"
     type="success"
     description="This is a description.">
-  </el-alert>
+  </sf-alert>
 </template>
 ```
 :::
@@ -132,30 +132,30 @@ Description includes a message with more detailed information.
 
 ```html
 <template>
-  <el-alert
+  <sf-alert
     title="success alert"
     type="success"
     description="more text description"
     show-icon>
-  </el-alert>
-  <el-alert
+  </sf-alert>
+  <sf-alert
     title="info alert"
     type="info"
     description="more text description"
     show-icon>
-  </el-alert>
-  <el-alert
+  </sf-alert>
+  <sf-alert
     title="warning alert"
     type="warning"
     description="more text description"
     show-icon>
-  </el-alert>
-  <el-alert
+  </sf-alert>
+  <sf-alert
     title="error alert"
     type="error"
     description="more text description"
     show-icon>
-  </el-alert>
+  </sf-alert>
 </template>
 ```
 :::

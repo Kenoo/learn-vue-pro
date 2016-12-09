@@ -9,10 +9,11 @@
   import MainLayout from '../layouts/Main.vue'
   import Markdown from '../examples/test.md'
 
+
   export default {
     components: {
       MainLayout,
-      Markdown
+      Markdown,
     }
   }
 </script>

@@ -1,5 +1,11 @@
 import Vue from 'vue'
 import routers from './routers'
+import DemoBlock from './components/DemoBlock.vue'
+import Alert from './packages/alert.vue'
+
+Vue.component('demo-block', DemoBlock)
+Vue.component('sf-alert', Alert)
+
 
 new Vue({
   el: '#app',
